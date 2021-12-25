@@ -1,7 +1,7 @@
 {
-	"name": "eleventy-web-starter",
-	"version": "1.7.0",
-	"description": "Eleventy Web Starter is a lightweight Eleventy boilerplate utilising, ESBuild Tailwind and PostCSS",
+	"name": "landing-sitzplan",
+	"version": "0.0.1",
+	"description": "Website for Sitzplan React App",
 	"scripts": {
 		"clean": "del-cli dist",
 		"dev:postcss": "postcss src/_assets/stylesheets/*.css -o src/static/styles.min.css --watch --verbose",
@@ -13,7 +13,7 @@
 		"start": "run-p dev:*",
 		"build": "run-s clean build:*"
 	},
-	"author": "Chris Collins",
+	"author": "Christian Kozalla",
 	"license": "ISC",
 	"devDependencies": {
 		"@11ty/eleventy": "^0.12.1",
