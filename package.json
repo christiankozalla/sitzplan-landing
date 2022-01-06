@@ -7,8 +7,8 @@
 		"dev:postcss": "postcss src/_assets/stylesheets/*.css -o src/static/styles.min.css --watch --verbose",
 		"dev:scripts": "esbuild src/_assets/scripts/app.js --bundle --watch --outfile=src/static/app.min.js",
 		"dev:11ty": "eleventy --serve --watch",
-		"build:postcss": "NODE_ENV=production postcss src/_assets/stylesheets/styles.css -o src/_includes/styles.min.css",
-		"build:11ty": "ELEVENTY_ENV=production eleventy",
+		"build:postcss": "postcss NODE_ENV=production src/_assets/stylesheets/styles.css -o src/_includes/styles.min.css",
+		"build:11ty": "eleventy ELEVENTY_ENV=production",
 		"build:scripts": "esbuild src/_assets/scripts/app.js --bundle --minify --outfile=dist/static/app.min.js",
 		"start": "run-p dev:*",
 		"build": "run-s clean build:*"
@@ -18,13 +18,13 @@
 	"devDependencies": {
 		"@11ty/eleventy": "^0.12.1",
 		"autoprefixer": "^10.3.1",
-		"del-cli": "^3.0.1",
-		"esbuild": "^0.12.15",
+		"del-cli": "^4.0.1",
+		"esbuild": "^0.14.10",
 		"html-minifier": "^4.0.0",
 		"luxon": "^2.0.1",
 		"npm-run-all": "^4.1.5",
-		"postcss-cli": "^8.3.1",
+		"postcss-cli": "^9.1.0",
 		"postcss-import": "^14.0.2",
-		"tailwindcss": "^2.2.6"
+		"tailwindcss": "^3.0.11"
 	}
 }
