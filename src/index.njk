@@ -1,25 +1,656 @@
 ---
 layout: base.njk
-title: Eleventy Web Starter - Eleventy, esbuild, Tailwind and PostCSS
-description: Eleventy Web Starter is a lightweight Eleventy boilerplate utilising esbuild, Tailwind CSS and Post CSS
+title: Home
+description: Seaty, die Sitzplan-App, ermöglicht schnelles, einfaches Erstellen, Teilen und Speichern deines Sitzplans! Sitzplan managen leicht gemacht!
 ---
 
-<main id="main" class="p-6 md:p-12 lg:p-16 border-t-8 border-gray-200">
-	<div class="max-w-xl">
-  	<h1 class="font-bold text-xl mb-2">Eleventy Web Starter <span class="font-light text-gray-500">v{{ pkg.version }}</span></h1>
-    <p>Eleventy Web Starter is a lightweight Eleventy boilerplate utilising esbuild, Tailwind CSS and Post CSS.</p>
-
-    <ul class="md:flex my-4 -mx-2 leading-tight ">
-        <li class="md:flex-auto p-2">
-            <a href="https://github.com/scottishstoater/eleventy-web-starter/zipball/master/" class="block shadow text-center no-underline p-3 font-semibold bg-ws-blue-500 text-white rounded hover:bg-ws-blue-600">Download (.zip)</a>
-        </li>
-        <li class="md:flex-auto p-2">
-            <a href="https://github.com/scottishstoater/eleventy-web-starter#features" class="block text-center no-underline text-black p-3 font-semibold rounded border hover:bg-gray-100">Get started</a>
-        </li>
-    </ul>
-
-    <footer class="text-xs text-gray-500 mt-12 border-t border-gray-100 pt-6">
-       <p>Proudly crafted in Scotland by <a href="https://www.chrissy.dev">Chris Collins</a></p>
-    </footer>
-	</div>
+<main>
+  <div
+    style="
+      position: fixed;
+      z-index: 9999;
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      pointer-events: none;
+    "
+  ></div>
+  <div class="mx-auto overflow-hidden">
+    <div class="mx-auto bg-white">
+      <div class="relative mx-auto max-w-7xl">
+        <div
+          class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full"
+          aria-hidden="true"
+        >
+          <div class="relative h-full mx-auto max-w-7xl"></div>
+        </div>
+        <div class="relative px-4 pt-10 md:px-10">
+          <div class="mx-auto max-w-7xl">
+            <nav
+              class="relative flex items-center justify-between z-10"
+              aria-label="Global"
+            >
+              <a
+                class="flex items-center justify-between w-full rounded-lg md:w-auto focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
+                href="/"
+                ><img src="/static/logo.svg" alt="Seaty Logo" class="h-10"
+              /></a>
+              <div class="flex flex-row items-center gap-x-6">
+                <a
+                  class="text-dark-blue hover:bg-primary-400 inline-flex items-center h-10 px-4 py-2 ml-2 text-sm font-medium border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
+                  href="#kurse"
+                  >Kurse</a
+                >
+                <a
+                  class="text-dark-blue hover:bg-primary-400 inline-flex items-center h-10 px-4 py-2 ml-2 text-sm font-medium border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
+                  href="#ueber"
+                  >Über</a
+                >
+                <div class="hidden md:flex md:items-center md:justify-end">
+                  <span class="inline-flex space-x-2">
+                    <a
+                      href="#"
+                      class="text-dark-blue py-5 px-6 bg-white border border-gray-400 hover:bg-primary-400 text-sm font-medium rounded-md shadow-xs border-opacity-10 sm:px-14 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
+                      >Log in</a
+                    >
+                  </span>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <section class="bg-center body-font bg-patterns">
+            <div
+              class="container px-6 pt-8 mx-auto sm:px-8 sm:pt-16 md:pt-32 lg:px-4"
+            >
+              <img
+                src="/static/primary-light-blur.svg"
+                alt=""
+                class="w-[550px] sm:w-[70%] h-auto absolute right-10 sm:right-0 bottom-0 overflow-visible transform translate-x-1/3 -translate-y-1"
+              /><img
+                src="/static/primary-dark-blur.svg"
+                alt=""
+                class="overflow-visible w-[550px] sm:w-[70%] h-auto absolute left-0 bottom-0 transform -translate-x-1/2 translate-y-1/2"
+              />
+              <img
+                src="/static/warning-blur.svg"
+                alt=""
+                class="overflow-visible w-[550px] sm:w-[70%] h-auto absolute left-0 transform -translate-x-1/2 -translate-y-1/3"
+              /><img
+                src="/static/attention-blur.svg"
+                alt=""
+                class="overflow-visible w-[550px] sm:w-[70%] h-auto absolute right-0 transform translate-x-1/2 -translate-y-1/3"
+              /><img
+                src="/static/primary-dark-blur.svg"
+                alt=""
+                class="overflow-visible w-[550px] sm:w-[70%] h-auto absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2"
+              />
+              <div
+                class="flex flex-col items-start w-full max-w-2xl mx-auto mb-8 text-left md:items-center md:text-center"
+              >
+                <h1
+                  class="mb-8 text-4xl font-bold tracking-tight text-dark-blue md:text-6xl"
+                >
+                  Erstelle einen Sitzplan. Schnell. Einfach. Wunderbar.
+                </h1>
+                <p
+                  class="mx-auto text-xl leading-snug tracking-tight text-gray-400 md:w-1/2"
+                >
+                  Mit Seaty erstellt jede:r Lehrer:in im Handumdrehen einen
+                  Sitzplan!<!-- -->
+                </p>
+              </div>
+              <div
+                class="flex flex-col items-center md:flex-row md:justify-center"
+              >
+                <div
+                  class="items-center justify-center max-w-xl space-y-8 sm:space-x-8 sm:space-y-0 sm:flex"
+                >
+                  <div class="relative z-10">
+                    <a
+                      href="#pricing"
+                      class="inline-flex items-center w-full py-6 text-base font-bold text-white bg-primary-800 border border-transparent rounded-md px-14 hover:bg-primary-400 hover:text-primary-900 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
+                      >Baue deinen Sitzplan</a
+                    >
+                  </div>
+                  <div class="relative z-10">
+                    <button
+                      type="button"
+                      class="inline-flex items-center w-full text-base font-bold text-primary-900 border border-transparent rounded-md py-4 px-8 md:w-auto hover:bg-primary-400 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-8 focus:ring-primary-600"
+                    >
+                      <svg
+                        width="40"
+                        height="40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="20"
+                          cy="20"
+                          r="20"
+                          fill="currentColor"
+                          fill-opacity=".19"
+                        ></circle>
+                        <path
+                          d="M26.896 19.693a1 1 0 010 1.614l-8.556 6.257a1 1 0 01-1.59-.807V14.243a1 1 0 011.59-.807l8.556 6.257z"
+                          class="text-primary-900"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <div class="flex flex-col items-start pl-4">
+                        <p class="text-dark-blue">Schaue die Demo</p>
+                        <p class="text-sm font-medium text-gray-400">
+                          2 Minuten
+                        </p>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative w-full my-20">
+              <img
+                src="/static/seaty-hero.webp"
+                alt="Screenshot of Seaty App"
+                class="relative z-30 w-3/4 max-w-6xl mx-auto shadow-xl -skew-y-2"
+              /><img
+                src="/static/gradient_ball.svg"
+                alt=""
+                class="h-[30.937%] z-40 absolute left-[84%] top-[8.3%]"
+              /><img
+                src="/static/gradient_ball.svg"
+                alt=""
+                class="h-[51.215%] z-40 absolute left-[-4.86%] top-[41.605%]"
+              />
+              <div
+                class="w-[48%] h-auto absolute -right-1/3 top-[-22.401%] z-0"
+              >
+                <div
+                  class="aspect-w-1 aspect-h-1 bg-attention rounded-full filter blur-[85px] sm:blur-[150px] md:blur-[200px] lg:blur-[250px]"
+                ></div>
+              </div>
+              <div class="w-[48%] h-auto absolute left-[-20.833%] top-0 z-0">
+                <div
+                  class="aspect-w-1 aspect-h-1 bg-warning rounded-full filter blur-[85px] sm:blur-[150px] md:blur-[200px] lg:blur-[250px]"
+                ></div>
+              </div>
+              <div
+                class="w-[28.56%] h-auto absolute left-[-20.833%] top-[44.802%] z-10"
+              >
+                <div
+                  class="aspect-w-1 aspect-h-1 bg-pink-300 rounded-full filter blur-[55px] sm:blur-[60px] md:blur-[110px] lg:blur-[160px]"
+                ></div>
+              </div>
+              <div
+                class="w-[40.8%] h-auto absolute right-[-16.666%] top-[22.401%] z-10"
+              >
+                <div
+                  class="aspect-w-1 aspect-h-1 bg-pink-300 rounded-full filter blur-[55px] sm:blur-[60px] md:blur-[110px] lg:blur-[160px]"
+                ></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="px-6 py-20 bg-white md:py-24 sm:px-12">
+        <div class="relative max-w-6xl mx-auto">
+          <div
+            class="relative z-50 flex flex-col items-center justify-center w-full p-8 mx-auto text-center bg-primary-200 bg-opacity-50 border border-primary-400 sm:p-24 text-dark-blue rounded-xl backdrop-filter backdrop-blur-lg"
+          >
+            <blockquote
+              class="text-xl md:text-[27px] font-bold md:max-w-[644px] pb-6 sm:pb-10"
+            >
+              Lorem Ipsum Dolor Sit Amet...
+            </blockquote>
+            <div
+              class="flex items-center w-full pb-6 text-base font-bold sm:pb-10"
+            >
+              <img
+                class="w-24 h-24 rounded-full"
+                src="/dustin_profile_pic.jpeg"
+                alt=""
+              />
+              <div class="flex flex-col items-start pl-4 text-left">
+                <p class="text-dark-blue">John Doe</p>
+                <p class="text-sm font-medium text-gray-400">
+                  Teacher, Hogwarts School of Witchcraft and Wizardry
+                </p>
+              </div>
+            </div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="#"
+              class="px-6 py-5 text-base font-bold bg-white border border-gray-400 rounded-md shadow-xs border-opacity-10 sm:px-14 text-dark-blue hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
+              >Another CTA</a
+            >
+          </div>
+          <img
+            src="/gradient_ball.svg"
+            alt=""
+            class="h-60 z-10 absolute right-0 top-[56%] floating-animation-testimonial"
+          />
+        </div>
+      </div>
+      <div class="relative bg-white">
+        <div class="px-6 py-12 mx-auto max-w-7xl sm:px-12 lg:py-16 lg:px-8">
+          <div
+            class="relative max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center"
+          >
+            <div>
+              <h2
+                class="text-3xl font-bold text-dark-blue sm:text-[46px] sm:leading-[50px]"
+              >
+                Erstelle, konfiguriere und speichere einfach deinen Sitzplan!
+              </h2>
+              <p
+                class="max-w-3xl mt-3 text-lg text-gray-400 sm:mt-8 sm:text-xl"
+              >
+                Lorem Ipsum Dolor Sit Amet... Lorem Ipsum Dolor Sit Amet...
+                Lorem Ipsum Dolor Sit Amet... Lorem Ipsum Dolor Sit Amet...
+              </p>
+            </div>
+            <div
+              class="mx-auto lg:mx-0 lg:justify-self-end mt-8 sm:mt-12 lg:mt-8 relative w-[265px] h-[265px] sm:w-[448px] sm:h-[448px]"
+            >
+              <div
+                class="absolute top-8 left-4 sm:left-8 flex justify-center p-4 sm:p-8 bg-white rounded-full h-[4.35rem] w-[4.35rem] sm:h-[7.25rem] sm:w-[7.25rem] shadow-language border border-gray-400 border-opacity-10"
+              >
+                <img
+                  class="max-h-12"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png"
+                  alt="Python"
+                />
+              </div>
+              <div
+                class="absolute top-0 left-36 sm:left-60 flex justify-center p-4 sm:p-8 bg-white rounded-full h-[4.35rem] w-[4.35rem] sm:h-[7.25rem] sm:w-[7.25rem] shadow-language border border-gray-400 border-opacity-10"
+              >
+                <img
+                  class="max-h-12"
+                  src="https://destatic.blob.core.windows.net/images/nodejs-logo.png"
+                  alt="Node"
+                />
+              </div>
+              <div
+                class="absolute top-52 left-12 sm:top-72 sm:left-4 flex justify-center p-4 sm:p-8 bg-white rounded-full h-[4.35rem] w-[4.35rem] sm:h-[7.25rem] sm:w-[7.25rem] shadow-language border border-gray-400 border-opacity-10"
+              >
+                <img
+                  class="max-h-12"
+                  src="https://www.rust-lang.org/logos/rust-logo-blk.svg"
+                  alt="Rust"
+                />
+              </div>
+              <div
+                class="absolute top-20 left-52 sm:top-40 sm:left-80 flex justify-center p-4 sm:p-8 bg-white rounded-full h-[4.35rem] w-[4.35rem] sm:h-[7.25rem] sm:w-[7.25rem] shadow-language border border-gray-400 border-opacity-10"
+              >
+                <img
+                  class="max-h-12"
+                  src="https://www.ruby-lang.org/images/header-ruby-logo.png"
+                  alt="Ruby"
+                />
+              </div>
+              <div
+                class="absolute top-28 left-24 sm:top-44 sm:left-36 flex justify-center p-4 sm:p-8 bg-white rounded-full h-[4.35rem] w-[4.35rem] sm:h-[7.25rem] sm:w-[7.25rem] shadow-language border border-gray-400 border-opacity-10"
+              >
+                <img class="max-h-12" src="/Go-Logo_Blue.svg" alt="Go" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="relative flex flex-col items-center justify-center">
+          <div class="relative w-full mb-16">
+            <img
+              src="/static/primary-light-blur.svg"
+              alt=""
+              class="w-[550px] sm:w-[70%] h-auto absolute right-10 sm:right-0 top-0 transform translate-x-1/2 -translate-y-1/2"
+            /><img
+              src="/static/primary-dark-blur.svg"
+              alt=""
+              class="w-[550px] sm:w-[70%] h-auto absolute left-0 bottom-0 z-10 transform -translate-x-1/2 translate-y-1/2"
+            /><img
+              src="/static/primary-light-blur.svg"
+              alt=""
+              class="w-[550px] sm:w-[70%] h-auto absolute right-0 bottom-[-40%] transform translate-x-1/2 translate-y-1/2"
+            />
+            <div class="px-6 pt-24 pb-24 mx-auto max-w-7xl sm:px-12">
+              <h2
+                class="mt-2 mb-20 text-4xl font-bold text-dark-blue sm:text-[46px] text-center"
+              >
+                Gründe für Seaty?
+              </h2>
+              <div
+                class="flex flex-col items-center justify-center gap-16 md:flex-row md:items-start md:gap-8"
+              >
+                <div
+                  class="flex flex-col items-center text-center max-w-md md:max-w-[350px] flex-1"
+                >
+                  <div
+                    class="flex items-center justify-center w-16 h-16 bg-purple-600 rounded-full"
+                  >
+                    <svg
+                      width="23"
+                      height="23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0)" fill="#fff">
+                        <path
+                          d="M22.877 3.683a.889.889 0 00-.588-.416L9.261.127A.882.882 0 008.26.69L3.294 13.306l1.657.604L9.658 1.915l11.32 2.888c-.708 2.192-2.39 6.766-4.002 11.026-1.406 3.716-2.215 4.988-3.753 5.248-.002-.002-.004-.003-.004-.006-3.142.44-3.086-3.566-3.086-3.566L.097 13.451c-.714 4.52 2.76 5.608 2.76 5.608l7.348 3.336c.002.001 1.15.548 2.396.492 3.363-.08 4.545-2.522 6.025-6.434a461.31 461.31 0 004.332-12.056.873.873 0 00-.081-.714z"
+                        ></path>
+                        <path
+                          d="M16.938 8.771a.884.884 0 001.084-.618.883.883 0 00-.62-1.084L13.58 5.89a.883.883 0 10-.465 1.702l3.824 1.18zM10.963 10.04a.883.883 0 00.558 1.117l3.804 1.36a.884.884 0 001.117-.558.882.882 0 00-.559-1.116l-3.802-1.358a.884.884 0 00-1.118.556zM10.629 13.168a.882.882 0 10-.55 1.675l3.812 1.353a.883.883 0 00.55-1.676l-3.812-1.352zM10.488 4.86c.54 0 .978.426.978.951 0 .526-.438.952-.978.952s-.98-.426-.98-.952c0-.525.44-.95.98-.95zM9.104 8.396c.54 0 .978.426.978.951 0 .525-.438.95-.978.95s-.98-.425-.98-.95c0-.525.439-.95.98-.95zM7.627 12.045c.541 0 .98.426.98.952 0 .525-.439.95-.98.95-.54 0-.979-.425-.979-.95 0-.526.439-.952.98-.952z"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0">
+                          <path fill="#fff" d="M0 0h23v23H0z"></path>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <h2 class="my-5 text-2xl font-bold text-dark-blue">
+                    Teile deinen Sitzplan!
+                  </h2>
+                  <p class="text-base font-medium text-gray-400">
+                    Deinen Sitzplan kannst du interaktiv über die generierte URL
+                    teilen, z.B. via Email der Kollegin mal eben rüberschicken.
+                    Sie schickt ihre Änderungen prompt zurück. Wow!
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center text-center max-w-md md:max-w-[350px] flex-1"
+                >
+                  <div
+                    class="flex items-center justify-center w-16 h-16 bg-purple-600 rounded-full"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.428 12l3.266-2.394a.75.75 0 000-1.21L12.444.146a.752.752 0 00-.888 0L.306 8.396a.75.75 0 000 1.21L3.572 12 .306 14.396a.75.75 0 000 1.21l11.25 8.25a.752.752 0 00.888 0l11.25-8.25a.75.75 0 000-1.21L20.428 12zM12 1.68L21.981 9 12 16.32 2.019 9 12 1.68zm0 20.64L2.019 15l2.822-2.069 6.715 4.925a.75.75 0 00.888 0l6.715-4.925 2.823 2.07L12 22.32z"
+                        fill="#fff"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2 class="my-5 text-2xl font-bold text-dark-blue">
+                    Speichere deinen Sitzplan als PDF
+                  </h2>
+                  <p class="text-base font-medium text-gray-400">
+                    Seaty spuckt deinen Sitzplan auch als PDF aus!
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-center text-center max-w-md md:max-w-[350px] flex-1"
+                >
+                  <div
+                    class="flex items-center justify-center w-16 h-16 bg-purple-600 rounded-full"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.68 1.406h-1.617V.563a.562.562 0 10-1.126 0v.843H5.064V.563a.562.562 0 10-1.125 0v.843H2.32C1.04 1.406 0 2.447 0 3.726V15.68C0 16.96 1.04 18 2.32 18h13.36c1.28 0 2.32-1.04 2.32-2.32V3.727c0-1.28-1.04-2.32-2.32-2.32zm1.195 14.274c0 .66-.535 1.195-1.195 1.195H2.32c-.66 0-1.195-.535-1.195-1.195V6.363c0-.097.079-.176.176-.176h15.398c.097 0 .176.08.176.176v9.317z"
+                        fill="#fff"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h2 class="my-5 text-2xl font-bold text-dark-blue">
+                    Perspektive: Seaty Cloud
+                  </h2>
+                  <p class="text-base font-medium text-gray-400">
+                    Jedes Jahr dieselbe Klasse?! Ja, fast...! Wenn der Plan vom
+                    letzten Jahr noch in der Cloud ist, sind nur winzige
+                    Anpassungen nötig. Schwupp-Di-Wupp. Fertig!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-6 mx-auto sm:px-12">
+            <div
+              id="pricing"
+              class="relative z-0 w-full max-w-6xl px-4 py-12 mx-auto bg-dark-blue rounded-xl sm:py-24"
+            >
+              <img
+                src="/gradient_ball.svg"
+                alt=""
+                class="h-60 z-10 absolute left-0 top-[56%] transform -translate-x-1/2 floating-animation-pricing"
+              />
+              <div class="w-full max-w-2xl mx-auto space-y-8">
+                <div>
+                  <h2 class="pb-16 text-5xl font-bold text-center text-white">
+                    Preis
+                  </h2>
+                  <p class="relative grid max-w-lg grid-cols-2 mx-auto">
+                    <span class="flex flex-col text-center">
+                      <span
+                        class="text-5xl font-extrabold tracking-tight text-white"
+                        >0€</span
+                      >
+                      <span
+                        class="mt-2 text-base font-medium text-white text-opacity-50"
+                        >pro Monat</span
+                      >
+                      <span class="sr-only">plus</span></span
+                    >
+                    <span
+                      class="absolute flex items-center justify-center w-full h-12 text-white pointer-events-none"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        width="22"
+                        height="22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.066 9.066h-7.132V1.934a1.934 1.934 0 10-3.868 0v7.132H1.934a1.934 1.934 0 100 3.868h7.132v7.132a1.934 1.934 0 103.868 0v-7.132h7.132a1.934 1.934 0 100-3.868z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>
+                      <span class="flex flex-col text-center">
+                        <span
+                          class="text-5xl font-extrabold tracking-tight text-white"
+                          >10€</span
+                        >
+                        <span
+                          class="mt-2 text-base font-medium text-white text-opacity-50"
+                          >pro Monat</span
+                        ></span
+                      ></span
+                    >
+                  </p>
+                </div>
+                <ul
+                  class="grid grid-cols-1 gap-4 rounded sm:grid-cols-2 sm:grid-rows-3 sm:grid-flow-col"
+                >
+                  <li
+                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-[#343C62] rounded-md"
+                  >
+                    <div>
+                      <svg
+                        width="13"
+                        height="11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="text-pink-300"
+                      >
+                        <path
+                          d="M12.517.468C11.973.026 11.19.09 10.768.609L5.207 7.466 2.304 3.694A1.286 1.286 0 00.267 5.262l3.896 5.063c.433.562 1.24.667 1.803.235.16-.124.279-.28.363-.45l6.41-7.902c.421-.52.322-1.299-.223-1.74z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span>Ohne Limit</span>
+                  </li>
+                  <li
+                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-[#343C62] rounded-md"
+                  >
+                    <div>
+                      <svg
+                        width="13"
+                        height="11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="text-pink-300"
+                      >
+                        <path
+                          d="M12.517.468C11.973.026 11.19.09 10.768.609L5.207 7.466 2.304 3.694A1.286 1.286 0 00.267 5.262l3.896 5.063c.433.562 1.24.667 1.803.235.16-.124.279-.28.363-.45l6.41-7.902c.421-.52.322-1.299-.223-1.74z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span>Lorem Ipsum</span>
+                  </li>
+                  <li
+                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-[#343C62] rounded-md"
+                  >
+                    <div>
+                      <svg
+                        width="13"
+                        height="11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="text-pink-300"
+                      >
+                        <path
+                          d="M12.517.468C11.973.026 11.19.09 10.768.609L5.207 7.466 2.304 3.694A1.286 1.286 0 00.267 5.262l3.896 5.063c.433.562 1.24.667 1.803.235.16-.124.279-.28.363-.45l6.41-7.902c.421-.52.322-1.299-.223-1.74z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span>Optimiert für Desktop</span>
+                  </li>
+                  <li
+                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-[#343C62] rounded-md"
+                  >
+                    <div>
+                      <svg
+                        width="13"
+                        height="11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="text-pink-300"
+                      >
+                        <path
+                          d="M12.517.468C11.973.026 11.19.09 10.768.609L5.207 7.466 2.304 3.694A1.286 1.286 0 00.267 5.262l3.896 5.063c.433.562 1.24.667 1.803.235.16-.124.279-.28.363-.45l6.41-7.902c.421-.52.322-1.299-.223-1.74z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span>Schneller Login über Google, Apple und Facebook</span>
+                  </li>
+                  <li
+                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-[#343C62] rounded-md"
+                  >
+                    <div>
+                      <svg
+                        width="13"
+                        height="11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="text-pink-300"
+                      >
+                        <path
+                          d="M12.517.468C11.973.026 11.19.09 10.768.609L5.207 7.466 2.304 3.694A1.286 1.286 0 00.267 5.262l3.896 5.063c.433.562 1.24.667 1.803.235.16-.124.279-.28.363-.45l6.41-7.902c.421-.52.322-1.299-.223-1.74z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span>Lorem Ipsum</span>
+                  </li>
+                  <li
+                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-[#343C62] rounded-md"
+                  >
+                    <div>
+                      <svg
+                        width="13"
+                        height="11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="text-pink-300"
+                      >
+                        <path
+                          d="M12.517.468C11.973.026 11.19.09 10.768.609L5.207 7.466 2.304 3.694A1.286 1.286 0 00.267 5.262l3.896 5.063c.433.562 1.24.667 1.803.235.16-.124.279-.28.363-.45l6.41-7.902c.421-.52.322-1.299-.223-1.74z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span>Lorem Ipsum</span>
+                  </li>
+                </ul>
+                <a
+                  type="button"
+                  href="#register"
+                  class="flex items-center justify-center w-full px-8 py-4 text-lg font-medium leading-6 text-gray-100 bg-purple-600 border border-transparent rounded-md appearance-none hover:bg-purple-700 md:px-10 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white"
+                  >Beginne heute deinen Sitzplan zu zaubern!</a
+                >
+                <a
+                  type="button"
+                  href="#terms"
+                  class="flex items-center justify-center w-full px-8 py-4 text-sm font-medium leading-6 text-gray-100 border border-transparent rounded-md appearance-none hover:bg-gray-900 md:px-10 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white"
+                  >AGB</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2
+        class="mt-16 mb-2 text-3xl font-extrabold tracking-tight text-center text-gray-700 sm:text-4xl md:text-5xl"
+      >
+        Lehrer lieben Seaty!
+      </h2>
+      <footer class="bg-white">
+        <div
+          class="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"
+        >
+          <div class="mx-auto max-w-7xl">
+            <nav
+              class="relative flex items-center justify-between"
+              aria-label="Global"
+            >
+              <a
+                class="flex items-center justify-between w-full rounded-lg md:w-auto focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
+                href="/"
+                ><img src="/static/logo.svg" alt="Seaty Logo" class="h-10"
+              /></a>
+              <div class="flex flex-row items-center gap-x-6">
+                <a
+                  class="text-dark-blue hover:bg-primary-200 inline-flex items-center h-10 px-4 py-2 ml-2 text-sm font-medium border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
+                  href="#kurse"
+                  >Kurse</a
+                >
+                <a
+                  class="text-dark-blue hover:bg-primary-200 inline-flex items-center h-10 px-4 py-2 ml-2 text-sm font-medium border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
+                  href="#ueber"
+                  >Über</a
+                >
+                <div class="hidden md:flex md:items-center md:justify-end">
+                  <span class="inline-flex space-x-2">
+                    <a
+                      href="#login"
+                      class="text-dark-blue py-5 px-6 bg-white border border-gray-400 hover:bg-primary-100 text-sm font-medium rounded-md shadow-xs border-opacity-10 sm:px-14 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
+                      >Log in</a
+                    >
+                  </span>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <p class="mt-8 text-base text-center text-gray-400">Lorem Ipsum</p>
+        </div>
+      </footer>
+    </div>
+  </div>
 </main>
