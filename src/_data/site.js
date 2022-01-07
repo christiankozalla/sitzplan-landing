@@ -1,11 +1,11 @@
 module.exports = {
-  "title": "Eleventy Web Starter",
-  "description": "Minimal boilerplate for new projects built with Eleventy, Tailwind, PurgeCSS and PostCSS",
-  "url": "https://eleventywebstarter.netlify.app",
-  "author": "Chris Collins",
-  "meta_data": {
-    "twitter": "@scottishstoater",
-    "opengraph_default": "/static/opengraph-default.jpg"
-  },
-  "env": process.env.ELEVENTY_ENV === 'production'
-}
+	title: 'Seaty',
+	description: 'Seaty App Landing Page',
+	url: 'http://localhost:8080',
+	author: 'Christian Kozalla',
+	meta_data: {
+		twitter: '@CKozalla',
+		opengraph_default: '/static/opengraph-default.jpg'
+	},
+	env: process.env.ELEVENTY_ENV === 'production'
+};
