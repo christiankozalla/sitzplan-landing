@@ -1,7 +1,11 @@
+@import "utils/_tailwind.css";
+@import "utils/_accessibility.css";
 
-@import 'utils/_tailwind.css';
-@import 'utils/_accessibility.css';
-
-a {
-	@apply text-ws-blue-500 underline;
+:root {
+	--color-primary-lightest: rgb(224, 243, 245); /* #E0F3F5 */
+	--color-primary-lighter: rgb(205, 236, 238); /* #CDECEE */
+	--color-primary-light: rgb(128, 206, 213); /* #80CED5 */
+	--color-primary-dark: rgb(49, 181, 212); /* #31B5D4 */
+	--color-warning: rgb(243, 194, 39); /* #F3C227 */
+	--color-attention: rgb(236, 71, 26); /* #EC471A */
 }
