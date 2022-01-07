@@ -1,4 +1,4 @@
-# Landing Page for Seaty Web App
+<h1><img src="./src/static/logo.svg" alt="Seaty Logo">Landing Page for Seaty Web App</h1>
 
 ## Contents
 
