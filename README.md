@@ -1,4 +1,4 @@
-<h1><img src="./src/static/logo.svg" style="width: 1rem; height: 1rem;" alt="Seaty Logo">Landing Page for Seaty Web App</h1>
+<h1><img src="./src/static/logo.svg" style="width: 3rem; height: 3rem; margin-right: 8px;" alt="Seaty Logo">Landing Page for Seaty Web App</h1>
 
 ## Contents
 
