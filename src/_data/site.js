@@ -1,6 +1,6 @@
 module.exports = {
-	title: 'Seaty',
-	description: 'Seaty App Landing Page',
+	title: 'Puroviva',
+	description: 'Puroviva App Landing Page',
 	url: 'http://localhost:8080',
 	author: 'Christian Kozalla',
 	meta_data: {
