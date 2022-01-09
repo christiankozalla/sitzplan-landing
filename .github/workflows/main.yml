@@ -40,8 +40,10 @@ jobs:
         run: |
           wget https://dl.min.io/client/mc/release/linux-amd64/mc
           chmod +x ./mc
-          ./mc alias set puroviva https://www.puroviva.de.s3.nl-ams.scw.cloud ${{ env.ACCESS_KEY }} ${{ env.SECRET_KEY }} --api S3v4
-      - name: Push to S3
-        run: ./mc cp -r dist/ puroviva
+          ./mc alias set s3 https://s3.nl-ams.scw.cloud ${{ env.ACCESS_KEY }} ${{ env.SECRET_KEY }} --api S3v4
+      # - name: Push to S3
+        # run: ./mc cp -r dist/ s3/www.puroviva.de
+      - name: List all Buckets
+        run: ./mc s3 ls
 
         
