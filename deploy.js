@@ -35,11 +35,12 @@ allFiles.forEach((filePath) => {
 	minioClient.copyObject(
 		BUCKET_NAME,
 		fileName,
-		filePath,
+		filePath.replace('dist', BUCKET_NAME),
 		cond,
 		function (error, data) {
 			if (error) {
-				return console.log(error);
+				console.log(error);
+				throw new Error(error);
 			} else {
 				console.log('Successfully copied the object: ' + data.etag);
 			}
