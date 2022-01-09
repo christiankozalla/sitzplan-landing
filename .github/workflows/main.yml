@@ -40,7 +40,7 @@ jobs:
         run: |
           wget https://dl.min.io/client/mc/release/linux-amd64/mc
           chmod +x ./mc
-          ./mc alias set s3 https://s3.nl-ams.scw.cloud ${{ env.S3_ACCESS_KEY }} ${{ env.S3_SECRET_KEY }} --api S3v4
+          ./mc alias set s3 https://s3.nl-ams.scw.cloud ${{ env.ACCESS_KEY }} ${{ env.SECRET_KEY }} --api S3v4
           ./mc cp -r dist/ s3/www.puroviva.de
 
         
