@@ -36,10 +36,9 @@ jobs:
       - name: Install minIO client
         run: |
           wget https://dl.min.io/client/mc/release/linux-amd64/mc
-          chmod +x mc
+          chmod +x ./mc
           ./mc --help
           ./mc alias set s3 https://s3.nl-ams.scw.cloud ${{ secrets.S3_ACCESS_KEY }} ${{ secrets.S3_SECRET_KEY }} --api S3v4
-          cd ./dist
-          ../mc cp -r . s3/www.puroviva.de
+          ./mc cp -r dist/ s3/www.puroviva.de
 
         
