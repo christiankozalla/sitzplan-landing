@@ -36,5 +36,11 @@ jobs:
       - name: Build Site into dist
         run: npm run build
 
-      - name: Deploy with Node Script
-        run: npm run deploy
+      # - name: Deploy with Node Script
+      #   run: npm run deploy
+      - name: Install MinIO Client
+        run: |
+          wget https://dl.min.io/client/mc/release/linux-amd64/mc
+          chmod +x ./mc
+          ./mc alias set s3 https://s3.nl-ams.scw.cloud $ACCESS_KEY $SECRET_KEY --api S3v4
+          ./mc cp -r dist/ s3/www.puroviva.de
