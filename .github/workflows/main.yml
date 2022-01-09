@@ -34,11 +34,13 @@ jobs:
         run: npm run build
         
       - name: Install minIO client
+        env:
+          ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
+          SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
         run: |
           wget https://dl.min.io/client/mc/release/linux-amd64/mc
           chmod +x ./mc
-          ./mc --help
-          ./mc alias set s3 https://s3.nl-ams.scw.cloud ${{ secrets.S3_ACCESS_KEY }} ${{ secrets.S3_SECRET_KEY }} --api S3v4
-          ./mc cp -r -q --insecure dist/ s3/www.puroviva.de
+          ./mc alias set s3 https://s3.nl-ams.scw.cloud ${{ env.S3_ACCESS_KEY }} ${{ env.S3_SECRET_KEY }} --api S3v4
+          ./mc cp -r dist/ s3/www.puroviva.de
 
         
