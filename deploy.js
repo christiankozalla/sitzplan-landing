@@ -35,10 +35,9 @@ const allFiles = getAllFiles('dist');
 const cond = new Minio.CopyConditions();
 
 allFiles.forEach((filePath) => {
-	const fileName = filePath.split('/')[filePath.split('/').length - 1];
 	minioClient.copyObject(
 		BUCKET_NAME,
-		fileName,
+		filePath.replace('dist', BUCKET_NAME),
 		filePath.replace('dist', BUCKET_NAME),
 		cond,
 		function (error, data) {
