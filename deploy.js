@@ -38,7 +38,7 @@ allFiles.forEach((filePath) => {
 	minioClient.copyObject(
 		BUCKET_NAME,
 		filePath.replace('dist', BUCKET_NAME),
-		filePath.replace('dist', BUCKET_NAME),
+		filePath,
 		cond,
 		function (error, data) {
 			if (error) {
