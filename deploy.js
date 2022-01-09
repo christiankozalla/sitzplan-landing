@@ -5,6 +5,8 @@ const BUCKET_NAME = 'www.puroviva.de';
 const minioClient = new Minio.Client({
 	endPoint: 's3.nl-ams.scw.cloud',
 	useSSL: false,
+	region: 'nl-ams',
+	pathStyle: false,
 	accessKey: process.env.ACCESS_KEY,
 	secretKey: process.env.SECRET_KEY
 });
