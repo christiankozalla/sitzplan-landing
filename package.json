@@ -12,7 +12,8 @@
 		"build:scripts": "esbuild src/_assets/scripts/app.js --bundle --minify --outfile=dist/static/app.min.js",
 		"copy-404": "cp dist/404/index.html dist/404.html",
 		"start": "run-p dev:*",
-		"build": "run-s clean build:* copy-404"
+		"build": "run-s clean build:* copy-404",
+		"deploy": "node deploy.js"
 	},
 	"author": "Christian Kozalla",
 	"license": "ISC",
@@ -23,6 +24,7 @@
 		"esbuild": "^0.14.10",
 		"html-minifier": "^4.0.0",
 		"luxon": "^2.0.1",
+		"minio": "^7.0.25",
 		"npm-run-all": "^4.1.5",
 		"postcss-cli": "^9.1.0",
 		"postcss-import": "^14.0.2",
