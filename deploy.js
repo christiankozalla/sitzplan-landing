@@ -11,6 +11,10 @@ const minioClient = new Minio.Client({
 	secretKey: process.env.SECRET_KEY
 });
 
+if (!process.env.ACCESS_KEY || !process.env.SECRET_KEY) {
+	throw new Error('ENVIRONMENT VARIABLE MISSING!');
+}
+
 function getAllFiles(dir) {
 	const allFiles = [];
 	const files = fs.readdirSync(dir, { withFileTypes: true });
