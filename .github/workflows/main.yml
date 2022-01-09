@@ -32,7 +32,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Test Env Vars
-        run: echo $ACCESS_KEY
+        run: echo "$ACCESS_KEY"
       - name: Install npm packages  
         run: npm ci
       - name: Build Site into dist
