@@ -35,6 +35,8 @@ const allFiles = getAllFiles('dist');
 const cond = new Minio.CopyConditions();
 
 allFiles.forEach((filePath) => {
+	// copyObject is the wrong method in this case, because it copies existing files from A -> B in the bucket
+	// fputObject should be used
 	minioClient.copyObject(
 		BUCKET_NAME,
 		filePath.replace('dist', BUCKET_NAME),
