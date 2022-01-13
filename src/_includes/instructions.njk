@@ -1,0 +1,101 @@
+<section class="relative bg-white">
+  <div class="px-6 py-12 mx-auto max-w-7xl sm:px-12 lg:py-16 lg:px-8">
+    <div
+      class="relative max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center"
+    >
+      <div>
+        <h2
+          class="text-3xl font-bold text-dark-blue sm:text-[46px] sm:leading-[50px]"
+        >
+          Erstelle, konfiguriere und speichere einfach deinen Sitzplan!
+        </h2>
+        <p class="max-w-3xl mt-3 text-lg text-gray-400 sm:mt-8 sm:text-xl">
+          Lorem Ipsum Dolor Sit Amet... Lorem Ipsum Dolor Sit Amet... Lorem
+          Ipsum Dolor Sit Amet... Lorem Ipsum Dolor Sit Amet...
+        </p>
+      </div>
+      <div
+        class="mx-auto lg:mx-0 lg:justify-self-end mt-8 sm:mt-12 lg:mt-8 relative w-[265px] h-[265px] sm:w-[448px] sm:h-[448px]"
+      >
+        <ul class="mr-8">
+          <li
+            class="relative py-4 px-12 bg-primary-400 rounded-full shadow-xl leading-5 mb-4"
+          >
+            <!-- --- Maus-Zeiger Icon --- Erzeuge Tische Ctrl + *Wisch* oder Doppelklick -->
+            <img
+              src="/static/create-tables.gif"
+              alt="How to create tables in Seaty"
+              class="absolute -right-16 -top-16 w-32 h-32 bg-primary-800 rounded-full flex-none"
+            />
+            Beginne mit der Anordnung der Tische:<br />
+            <p class="text-center">
+              <strong>CTRL + Maus-Wisch</strong><br />
+              oder <strong>Doppelklick</strong>
+            </p>
+          </li>
+          <li
+            class="relative py-4 px-12 flex justify-center bg-primary-400 rounded-full shadow-xl mb-4"
+          >
+            <!-- --- Schüler Icon --- Erstelle Schüler, dragge & droppe sie umher -->
+            <!--             <div
+              class="absolute -right-8 flex items-center justify-center w-16 h-16 bg-primary-800 rounded-full flex-none"
+            >
+              {% include "icons/sheet.njk" %}
+            </div> -->
+            <img
+              src="/static/move-tables.gif"
+              alt="How to move tables and students in Seaty"
+              class="absolute -left-16 -top-16 w-32 h-32 bg-primary-800 rounded-full flex-none"
+            />
+            <p>
+              Erstelle Schüler,<br />
+              <strong>drag und drop</strong> sie umher!
+            </p>
+          </li>
+          <li
+            class="relative py-4 px-12 flex justify-center bg-primary-400 rounded-full shadow-xl mb-4"
+          >
+            <!-- --- Editor/Konfigurator Icon --- Rechtsklick auf einen Schüler öffnet den Konfigurator  -->
+            <div
+              class="absolute -right-8 top-2 flex items-center justify-center w-16 h-16 bg-primary-800 rounded-full flex-none"
+            >
+              {% include "icons/sheet.njk" %}
+            </div>
+            <p>
+              <strong>Rechtsklick</strong> auf einen Schüler öffnet den
+              <strong>Konfigurator</strong>
+            </p>
+          </li>
+          <li
+            class="relative py-4 px-12 flex justify-center bg-primary-400 rounded-full shadow-xl mb-4"
+          >
+            <!-- --- Schüler Konfig --- Ändere Name, lege erste oder letzte Reihe fest, gib "verbotene" Sitznachbarn ein -->
+            <div
+              class="absolute -left-8 top-2 flex items-center justify-center w-16 h-16 bg-primary-800 rounded-full flex-none"
+            >
+              {% include "icons/stack.njk" %}
+            </div>
+            <p>
+              Ändere Namen, <strong>lege erste oder letzte Reihe fest</strong>,
+              gib <em>"verbotene"</em> Sitznachbarn ein.
+            </p>
+          </li>
+          <li
+            class="relative py-4 px-12 flex justify-center bg-primary-400 rounded-full shadow-xl mb-4"
+          >
+            <!-- --- Autogenerieren --- Klicke "Neu Anordnen" um einen auto-generieren Sitzplan nach deinen Vorgaben zu erhalten  -->
+            <div
+              class="absolute -right-8 top-2 flex items-center justify-center w-16 h-16 bg-primary-800 rounded-full flex-none"
+            >
+              {% include "icons/calendar.njk" %}
+            </div>
+            <p>
+              Generiere <strong>automatisch</strong> einen Sitzplan
+              <strong>nach deinen Vorgaben</strong>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

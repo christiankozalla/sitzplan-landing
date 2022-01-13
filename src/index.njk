@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Home
-description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstellen, Teilen und Speichern deines Sitzplans! Sitzplan managen leicht gemacht!
+description: Seaty, die Sitzplan-App, ermöglicht schnelles, einfaches Erstellen, Teilen und Speichern deines Sitzplans! Sitzplan managen leicht gemacht!
 ---
 
 <main>
@@ -26,39 +26,7 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
           <div class="relative h-full mx-auto max-w-7xl"></div>
         </div>
         <div class="relative px-4 pt-10 md:px-10">
-          <div class="mx-auto max-w-7xl">
-            <nav
-              class="relative flex items-center justify-between z-10"
-              aria-label="Global"
-            >
-              <a
-                class="flex items-center justify-between w-full rounded-lg md:w-auto focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
-                href="/"
-                ><img src="/static/logo.svg" alt="Seaty Logo" class="h-10"
-              /></a>
-              <div class="flex flex-row items-center gap-x-6">
-                <a
-                  class="text-dark-blue hover:bg-primary-400 inline-flex items-center h-10 px-4 py-2 ml-2 text-sm font-medium border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
-                  href="#kurse"
-                  >Kurse</a
-                >
-                <a
-                  class="text-dark-blue hover:bg-primary-400 inline-flex items-center h-10 px-4 py-2 ml-2 text-sm font-medium border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
-                  href="#ueber"
-                  >Über</a
-                >
-                <div class="hidden md:flex md:items-center md:justify-end">
-                  <span class="inline-flex space-x-2">
-                    <a
-                      href="#"
-                      class="text-dark-blue py-5 px-6 bg-white border border-gray-400 hover:bg-primary-400 text-sm font-medium rounded-md shadow-xs border-opacity-10 sm:px-14 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
-                      >Log in</a
-                    >
-                  </span>
-                </div>
-              </div>
-            </nav>
-          </div>
+          {% include "navigation.njk" %}
           <section class="bg-center body-font bg-patterns">
             <div
               class="container px-6 pt-8 mx-auto sm:px-8 sm:pt-16 md:pt-32 lg:px-4"
@@ -88,15 +56,13 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
               <div
                 class="flex flex-col items-start w-full max-w-2xl mx-auto mb-8 text-left md:items-center md:text-center"
               >
-                <h1
-                  class="mb-8 text-4xl font-bold tracking-tight text-dark-blue md:text-6xl"
-                >
+                <h1 class="mb-8 text-4xl font-bold tracking-tight md:text-6xl">
                   Erstelle einen Sitzplan. Schnell. Einfach. Wunderbar.
                 </h1>
                 <p
                   class="mx-auto text-xl leading-snug tracking-tight text-gray-400 md:w-1/2"
                 >
-                  Mit Puroviva erstellt jede:r Lehrer:in im Handumdrehen einen
+                  Mit Seaty erstellt jede:r Lehrer:in im Handumdrehen einen
                   Sitzplan!<!-- -->
                 </p>
               </div>
@@ -150,8 +116,8 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
             </div>
             <div class="relative w-full my-20">
               <img
-                src="/static/puroviva-hero.webp"
-                alt="Screenshot of Puroviva App"
+                src="/static/seaty-hero.webp"
+                alt="Screenshot of Seaty App"
                 class="relative z-30 w-3/4 max-w-6xl mx-auto shadow-xl -skew-y-2"
               /><img
                 src="/static/gradient_ball.svg"
@@ -225,78 +191,13 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
             >
           </div>
           <img
-            src="/gradient_ball.svg"
+            src="/static/gradient_ball.svg"
             alt=""
             class="h-60 z-10 absolute right-0 top-[56%] floating-animation-testimonial"
           />
         </div>
       </div>
-      <div class="relative bg-white">
-        <div class="px-6 py-12 mx-auto max-w-7xl sm:px-12 lg:py-16 lg:px-8">
-          <div
-            class="relative max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center"
-          >
-            <div>
-              <h2
-                class="text-3xl font-bold text-dark-blue sm:text-[46px] sm:leading-[50px]"
-              >
-                Erstelle, konfiguriere und speichere einfach deinen Sitzplan!
-              </h2>
-              <p
-                class="max-w-3xl mt-3 text-lg text-gray-400 sm:mt-8 sm:text-xl"
-              >
-                Lorem Ipsum Dolor Sit Amet... Lorem Ipsum Dolor Sit Amet...
-                Lorem Ipsum Dolor Sit Amet... Lorem Ipsum Dolor Sit Amet...
-              </p>
-            </div>
-            <div
-              class="mx-auto lg:mx-0 lg:justify-self-end mt-8 sm:mt-12 lg:mt-8 relative w-[265px] h-[265px] sm:w-[448px] sm:h-[448px]"
-            >
-              <div
-                class="absolute top-8 left-4 sm:left-8 flex justify-center p-4 sm:p-8 bg-white rounded-full h-[4.35rem] w-[4.35rem] sm:h-[7.25rem] sm:w-[7.25rem] shadow-language border border-gray-400 border-opacity-10"
-              >
-                <img
-                  class="max-h-12"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png"
-                  alt="Python"
-                />
-              </div>
-              <div
-                class="absolute top-0 left-36 sm:left-60 flex justify-center p-4 sm:p-8 bg-white rounded-full h-[4.35rem] w-[4.35rem] sm:h-[7.25rem] sm:w-[7.25rem] shadow-language border border-gray-400 border-opacity-10"
-              >
-                <img
-                  class="max-h-12"
-                  src="https://destatic.blob.core.windows.net/images/nodejs-logo.png"
-                  alt="Node"
-                />
-              </div>
-              <div
-                class="absolute top-52 left-12 sm:top-72 sm:left-4 flex justify-center p-4 sm:p-8 bg-white rounded-full h-[4.35rem] w-[4.35rem] sm:h-[7.25rem] sm:w-[7.25rem] shadow-language border border-gray-400 border-opacity-10"
-              >
-                <img
-                  class="max-h-12"
-                  src="https://www.rust-lang.org/logos/rust-logo-blk.svg"
-                  alt="Rust"
-                />
-              </div>
-              <div
-                class="absolute top-20 left-52 sm:top-40 sm:left-80 flex justify-center p-4 sm:p-8 bg-white rounded-full h-[4.35rem] w-[4.35rem] sm:h-[7.25rem] sm:w-[7.25rem] shadow-language border border-gray-400 border-opacity-10"
-              >
-                <img
-                  class="max-h-12"
-                  src="https://www.ruby-lang.org/images/header-ruby-logo.png"
-                  alt="Ruby"
-                />
-              </div>
-              <div
-                class="absolute top-28 left-24 sm:top-44 sm:left-36 flex justify-center p-4 sm:p-8 bg-white rounded-full h-[4.35rem] w-[4.35rem] sm:h-[7.25rem] sm:w-[7.25rem] shadow-language border border-gray-400 border-opacity-10"
-              >
-                <img class="max-h-12" src="/Go-Logo_Blue.svg" alt="Go" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% include "instructions.njk" %}
       <div class="relative">
         <div class="relative flex flex-col items-center justify-center">
           <div class="relative w-full mb-16">
@@ -313,11 +214,11 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
               alt=""
               class="w-[550px] sm:w-[70%] h-auto absolute right-0 bottom-[-40%] transform translate-x-1/2 translate-y-1/2"
             />
-            <div class="px-6 pt-24 pb-24 mx-auto max-w-7xl sm:px-12">
+            <section class="px-6 pt-24 pb-24 mx-auto max-w-7xl sm:px-12">
               <h2
                 class="mt-2 mb-20 text-4xl font-bold text-dark-blue sm:text-[46px] text-center"
               >
-                Gründe für Puroviva?
+                Gründe für Seaty?
               </h2>
               <div
                 class="flex flex-col items-center justify-center gap-16 md:flex-row md:items-start md:gap-8"
@@ -326,7 +227,7 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
                   class="flex flex-col items-center text-center max-w-md md:max-w-[350px] flex-1"
                 >
                   <div
-                    class="flex items-center justify-center w-16 h-16 bg-purple-600 rounded-full"
+                    class="flex items-center justify-center w-16 h-16 bg-primary-800 rounded-full"
                   >
                     <svg
                       width="23"
@@ -362,47 +263,27 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
                   class="flex flex-col items-center text-center max-w-md md:max-w-[350px] flex-1"
                 >
                   <div
-                    class="flex items-center justify-center w-16 h-16 bg-purple-600 rounded-full"
+                    class="flex items-center justify-center w-16 h-16 bg-primary-800 rounded-full"
                   >
-                    <svg
-                      width="24"
-                      height="24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M20.428 12l3.266-2.394a.75.75 0 000-1.21L12.444.146a.752.752 0 00-.888 0L.306 8.396a.75.75 0 000 1.21L3.572 12 .306 14.396a.75.75 0 000 1.21l11.25 8.25a.752.752 0 00.888 0l11.25-8.25a.75.75 0 000-1.21L20.428 12zM12 1.68L21.981 9 12 16.32 2.019 9 12 1.68zm0 20.64L2.019 15l2.822-2.069 6.715 4.925a.75.75 0 00.888 0l6.715-4.925 2.823 2.07L12 22.32z"
-                        fill="#fff"
-                      ></path>
-                    </svg>
+                    {% include "icons/stack.njk" %}
                   </div>
                   <h2 class="my-5 text-2xl font-bold text-dark-blue">
                     Speichere deinen Sitzplan als PDF
                   </h2>
                   <p class="text-base font-medium text-gray-400">
-                    Puroviva spuckt deinen Sitzplan auch als PDF aus!
+                    Seaty spuckt deinen Sitzplan auch als PDF aus!
                   </p>
                 </div>
                 <div
                   class="flex flex-col items-center text-center max-w-md md:max-w-[350px] flex-1"
                 >
                   <div
-                    class="flex items-center justify-center w-16 h-16 bg-purple-600 rounded-full"
+                    class="flex items-center justify-center w-16 h-16 bg-primary-800 rounded-full"
                   >
-                    <svg
-                      width="18"
-                      height="18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M15.68 1.406h-1.617V.563a.562.562 0 10-1.126 0v.843H5.064V.563a.562.562 0 10-1.125 0v.843H2.32C1.04 1.406 0 2.447 0 3.726V15.68C0 16.96 1.04 18 2.32 18h13.36c1.28 0 2.32-1.04 2.32-2.32V3.727c0-1.28-1.04-2.32-2.32-2.32zm1.195 14.274c0 .66-.535 1.195-1.195 1.195H2.32c-.66 0-1.195-.535-1.195-1.195V6.363c0-.097.079-.176.176-.176h15.398c.097 0 .176.08.176.176v9.317z"
-                        fill="#fff"
-                      ></path>
-                    </svg>
+                    {% include "icons/calendar.njk" %}
                   </div>
                   <h2 class="my-5 text-2xl font-bold text-dark-blue">
-                    Perspektive: Puroviva Cloud
+                    Perspektive: Seaty Cloud
                   </h2>
                   <p class="text-base font-medium text-gray-400">
                     Jedes Jahr dieselbe Klasse?! Ja, fast...! Wenn der Plan vom
@@ -411,37 +292,35 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
                   </p>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
           <div class="w-full px-6 mx-auto sm:px-12">
             <div
               id="pricing"
-              class="relative z-0 w-full max-w-6xl px-4 py-12 mx-auto bg-dark-blue rounded-xl sm:py-24"
+              class="relative z-0 w-full max-w-6xl px-4 py-12 mx-auto bg-primary-200 rounded-xl sm:py-24"
             >
               <img
-                src="/gradient_ball.svg"
+                src="/static/gradient_ball.svg"
                 alt=""
                 class="h-60 z-10 absolute left-0 top-[56%] transform -translate-x-1/2 floating-animation-pricing"
               />
               <div class="w-full max-w-2xl mx-auto space-y-8">
                 <div>
-                  <h2 class="pb-16 text-5xl font-bold text-center text-white">
+                  <h2 class="pb-16 text-5xl font-extrabold text-center">
                     Preis
                   </h2>
                   <p class="relative grid max-w-lg grid-cols-2 mx-auto">
                     <span class="flex flex-col text-center">
-                      <span
-                        class="text-5xl font-extrabold tracking-tight text-white"
+                      <span class="text-5xl font-extrabold tracking-tight"
                         >0€</span
                       >
-                      <span
-                        class="mt-2 text-base font-medium text-white text-opacity-50"
+                      <span class="mt-2 text-base font-medium text-opacity-50"
                         >pro Monat</span
                       >
                       <span class="sr-only">plus</span></span
                     >
                     <span
-                      class="absolute flex items-center justify-center w-full h-12 text-white pointer-events-none"
+                      class="absolute flex items-center justify-center w-full h-12 pointer-events-none"
                       aria-hidden="true"
                     >
                       <svg
@@ -458,12 +337,10 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
                     </span>
                     <span>
                       <span class="flex flex-col text-center">
-                        <span
-                          class="text-5xl font-extrabold tracking-tight text-white"
+                        <span class="text-5xl font-extrabold tracking-tight"
                           >10€</span
                         >
-                        <span
-                          class="mt-2 text-base font-medium text-white text-opacity-50"
+                        <span class="mt-2 text-base font-medium text-opacity-50"
                           >pro Monat</span
                         ></span
                       ></span
@@ -474,7 +351,7 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
                   class="grid grid-cols-1 gap-4 rounded sm:grid-cols-2 sm:grid-rows-3 sm:grid-flow-col"
                 >
                   <li
-                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-[#343C62] rounded-md"
+                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-primary-800 rounded-md"
                   >
                     <div>
                       <svg
@@ -493,7 +370,7 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
                     <span>Ohne Limit</span>
                   </li>
                   <li
-                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-[#343C62] rounded-md"
+                    class="py-6 px-8 flex gap-4 items-center text-base text-primary-900 bg-primary-400 rounded-md"
                   >
                     <div>
                       <svg
@@ -512,7 +389,7 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
                     <span>Lorem Ipsum</span>
                   </li>
                   <li
-                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-[#343C62] rounded-md"
+                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-primary-800 rounded-md"
                   >
                     <div>
                       <svg
@@ -531,7 +408,7 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
                     <span>Optimiert für Desktop</span>
                   </li>
                   <li
-                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-[#343C62] rounded-md"
+                    class="py-6 px-8 flex gap-4 items-center text-base text-primary-900 bg-primary-400 rounded-md"
                   >
                     <div>
                       <svg
@@ -550,7 +427,7 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
                     <span>Schneller Login über Google, Apple und Facebook</span>
                   </li>
                   <li
-                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-[#343C62] rounded-md"
+                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-primary-800 rounded-md"
                   >
                     <div>
                       <svg
@@ -569,7 +446,7 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
                     <span>Lorem Ipsum</span>
                   </li>
                   <li
-                    class="py-6 px-8 flex gap-4 items-center text-base text-white bg-[#343C62] rounded-md"
+                    class="py-6 px-8 flex gap-4 items-center text-base text-primary-900 bg-primary-400 rounded-md"
                   >
                     <div>
                       <svg
@@ -591,7 +468,7 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
                 <a
                   type="button"
                   href="/app/"
-                  class="flex items-center justify-center w-full px-8 py-4 text-lg font-medium leading-6 text-gray-100 bg-purple-600 border border-transparent rounded-md appearance-none hover:bg-purple-700 md:px-10 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white"
+                  class="flex items-center justify-center w-full px-8 py-4 text-lg font-medium leading-6 text-white bg-primary-800 border border-transparent rounded-md appearance-none hover:bg-primary-400 hover:text-primary-900 md:px-10 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white"
                   >Beginne heute deinen Sitzplan zu zaubern!</a
                 >
                 <a
@@ -608,45 +485,13 @@ description: Puroviva, die Sitzplan-App, ermöglicht schnelles, einfaches Erstel
       <h2
         class="mt-16 mb-2 text-3xl font-extrabold tracking-tight text-center text-gray-700 sm:text-4xl md:text-5xl"
       >
-        Lehrer lieben Puroviva!
+        Lehrer lieben Seaty!
       </h2>
       <footer class="bg-white">
         <div
           class="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"
         >
-          <div class="mx-auto max-w-7xl">
-            <nav
-              class="relative flex items-center justify-between"
-              aria-label="Global"
-            >
-              <a
-                class="flex items-center justify-between w-full rounded-lg md:w-auto focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
-                href="/"
-                ><img src="/static/logo.svg" alt="Puroviva Logo" class="h-10"
-              /></a>
-              <div class="flex flex-row items-center gap-x-6">
-                <a
-                  class="text-dark-blue hover:bg-primary-200 inline-flex items-center h-10 px-4 py-2 ml-2 text-sm font-medium border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
-                  href="#kurse"
-                  >Kurse</a
-                >
-                <a
-                  class="text-dark-blue hover:bg-primary-200 inline-flex items-center h-10 px-4 py-2 ml-2 text-sm font-medium border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
-                  href="#ueber"
-                  >Über</a
-                >
-                <div class="hidden md:flex md:items-center md:justify-end">
-                  <span class="inline-flex space-x-2">
-                    <a
-                      href="#login"
-                      class="text-dark-blue py-5 px-6 bg-white border border-gray-400 hover:bg-primary-100 text-sm font-medium rounded-md shadow-xs border-opacity-10 sm:px-14 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
-                      >Log in</a
-                    >
-                  </span>
-                </div>
-              </div>
-            </nav>
-          </div>
+          {% include "navigation.njk" %}
           <p class="mt-8 text-base text-center text-gray-400">Lorem Ipsum</p>
         </div>
       </footer>

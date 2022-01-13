@@ -1,6 +1,6 @@
 module.exports = {
-	title: 'Puroviva',
-	description: 'Puroviva App Landing Page',
+	title: 'Seaty',
+	description: 'Seaty App Landing Page',
 	url: 'https://seaty.s3-website.nl-ams.scw.cloud/',
 	author: 'Christian Kozalla',
 	meta_data: {
