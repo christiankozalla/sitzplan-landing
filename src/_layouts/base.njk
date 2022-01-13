@@ -18,7 +18,11 @@
         font-display: optional;
         font-style: normal;
         font-named-instance: 'Regular';
-        src: url('static/Inter-roman.var.woff2?v=3.19') format('woff2');
+        {% if site.env %}
+        src: url({{ site.url }}static/Inter-roman.var.woff2?v=3.19) format('woff2');
+        {% else %}
+        src: url(http://localhost:8080/static/Inter-roman.var.woff2?v=3.19) format('woff2');
+        {% endif %}
       }
     </style>
   </head>
