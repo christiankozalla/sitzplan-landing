@@ -93,7 +93,7 @@ description: Seaty, die Sitzplan-App, ermöglicht schnelles, einfaches Erstellen
                         ></path>
                       </svg>
                       <div class="flex flex-col items-start pl-4">
-                        <p class="text-dark-blue">Schaue die Demo</p>
+                        <p class="text-primary-900">Schaue die Demo</p>
                         <p class="text-sm font-medium text-gray-400">
                           2 Minuten
                         </p>
@@ -150,33 +150,34 @@ description: Seaty, die Sitzplan-App, ermöglicht schnelles, einfaches Erstellen
       <div class="px-6 py-20 bg-white md:py-24 sm:px-12">
         <div class="relative max-w-6xl mx-auto">
           <div
-            class="relative z-50 flex flex-col items-center justify-center w-full p-8 mx-auto text-center bg-primary-200 bg-opacity-50 border border-primary-400 sm:p-24 text-dark-blue rounded-xl backdrop-filter backdrop-blur-lg"
+            class="relative z-50 flex flex-col items-center justify-center w-full p-8 mx-auto text-center bg-primary-200 bg-opacity-50 border border-primary-400 sm:p-24  rounded-xl backdrop-filter backdrop-blur-lg"
           >
             <blockquote
               class="text-xl md:text-[27px] font-bold md:max-w-[644px] pb-6 sm:pb-10"
             >
-              Lorem Ipsum Dolor Sit Amet...
+              Auch was für Zauberer und Hexen!
             </blockquote>
             <div
               class="flex items-center w-full pb-6 text-base font-bold sm:pb-10"
             >
               <img
                 class="w-24 h-24 rounded-full"
-                src="/static/logo.svg"
-                alt="Seaty Logo"
+                src="/static/wizard.webp"
+                loading="lazy"
+                alt="Zauberer in Hogwarts, Schule für Hexerei und Zauberei"
               />
               <div class="flex flex-col items-start pl-4 text-left">
-                <p class="text-dark-blue">John Doe</p>
-                <p class="text-sm font-medium text-gray-400">
-                  Teacher, Hogwarts School of Witchcraft and Wizardry
+                <p>Professor Flitwick</p>
+                <p class="text-sm font-medium text-gray-700">
+                  Lehrer in Hogwarts, Schule für Hexerei und Zauberei
                 </p>
               </div>
             </div>
             <a
               rel="noopener noreferrer"
-              href="#"
-              class="px-6 py-5 text-base font-bold bg-white border border-gray-400 rounded-md shadow-xs border-opacity-10 sm:px-14 text-dark-blue hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
-              >Another CTA</a
+              href="/app/"
+              class="px-6 py-5 text-base font-bold bg-primary-600 rounded-md shadow-xs sm:px-14 hover:bg-primary-800 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-primary-600"
+              >Probier' Seaty</a
             >
           </div>
           <img
@@ -205,7 +206,7 @@ description: Seaty, die Sitzplan-App, ermöglicht schnelles, einfaches Erstellen
             />
             <section class="px-6 pt-24 pb-24 mx-auto max-w-7xl sm:px-12">
               <h2
-                class="mt-2 mb-20 text-4xl font-bold text-dark-blue sm:text-[46px] text-center"
+                class="mt-2 mb-20 text-4xl font-bold sm:text-[46px] text-center"
               >
                 Gründe für Seaty?
               </h2>
@@ -239,7 +240,7 @@ description: Seaty, die Sitzplan-App, ermöglicht schnelles, einfaches Erstellen
                       </defs>
                     </svg>
                   </div>
-                  <h2 class="my-5 text-2xl font-bold text-dark-blue">
+                  <h2 class="my-5 text-2xl font-bold">
                     Teile deinen Sitzplan!
                   </h2>
                   <p class="text-base font-medium text-gray-400">
@@ -256,7 +257,7 @@ description: Seaty, die Sitzplan-App, ermöglicht schnelles, einfaches Erstellen
                   >
                     {% include "icons/stack.njk" %}
                   </div>
-                  <h2 class="my-5 text-2xl font-bold text-dark-blue">
+                  <h2 class="my-5 text-2xl font-bold">
                     Speichere deinen Sitzplan als PDF
                   </h2>
                   <p class="text-base font-medium text-gray-400">
@@ -271,7 +272,7 @@ description: Seaty, die Sitzplan-App, ermöglicht schnelles, einfaches Erstellen
                   >
                     {% include "icons/calendar.njk" %}
                   </div>
-                  <h2 class="my-5 text-2xl font-bold text-dark-blue">
+                  <h2 class="my-5 text-2xl font-bold">
                     Perspektive: Seaty Cloud
                   </h2>
                   <p class="text-base font-medium text-gray-400">
@@ -351,7 +352,7 @@ description: Seaty, die Sitzplan-App, ermöglicht schnelles, einfaches Erstellen
                   >
                     <div>{% include "icons/checkmark.njk" %}</div>
 
-                    <span>Lorem Ipsum</span>
+                    <span>Sitzplan als Link oder PDF teilen</span>
                   </li>
                   <li
                     class="py-6 px-8 flex gap-4 items-center text-base font-bold bg-primary-600 rounded-md"
@@ -369,13 +370,13 @@ description: Seaty, die Sitzplan-App, ermöglicht schnelles, einfaches Erstellen
                     class="py-6 px-8 flex gap-4 items-center text-base font-bold bg-primary-600 rounded-md"
                   >
                     <div>{% include "icons/checkmark.njk" %}</div>
-                    <span>Lorem Ipsum</span>
+                    <span>Ständige Verfügbarkeit deiner Sitzpläne</span>
                   </li>
                   <li
                     class="py-6 px-8 flex gap-4 items-center text-base font-bold bg-primary-600 rounded-md"
                   >
                     <div>{% include "icons/checkmark.njk" %}</div>
-                    <span>Lorem Ipsum</span>
+                    <span>Nutze alte Sitzpläne als Vorlage im neuen Schuljahr</span>
                   </li>
                 </ul>
                 <a
@@ -387,7 +388,7 @@ description: Seaty, die Sitzplan-App, ermöglicht schnelles, einfaches Erstellen
                 <a
                   type="button"
                   href="#terms"
-                  class="flex items-center justify-center w-full px-8 py-4 text-sm font-medium leading-6 text-gray-100 border border-transparent rounded-md appearance-none hover:bg-gray-900 md:px-10 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white"
+                  class="flex items-center justify-center w-full px-8 py-4 text-sm font-medium leading-6 text-gray-200 border border-transparent rounded-md appearance-none hover:bg-gray-900 md:px-10 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white"
                   >AGB</a
                 >
               </div>
