@@ -13,7 +13,6 @@
 		"copy-404": "cp dist/404/index.html dist/404.html",
 		"start": "run-p dev:*",
 		"build": "run-s clean build:* copy-404",
-		"deploy": "node deploy.js"
 	},
 	"author": "Christian Kozalla",
 	"license": "ISC",
